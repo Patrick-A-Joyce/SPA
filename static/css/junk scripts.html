@@ -1,0 +1,26 @@
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+                          
+    $(document).ready(function()
+    {
+        $("#HOME").click(function(){$(".col-lg-12").load("/");});
+
+        $("#PROJECTS").click(function(){$(".col-lg-12").load("/projects");});
+                
+        $("#GWORK").click(function(){$(".col-lg-12").load("/gwork");});
+
+        $("#PHOTO").click(function(){$(".col-lg-12").load("/photo");});
+
+        $("#VIDEO").click(function() {$(".col-lg-12").load("/video");});
+
+        $("#POETRY").click(function(){$(".col-lg-12").load("/poetry");});
+
+        $("#LINKS").click(function(){$(".col-lg-12").load("/links");});
+
+    }); 
+
+    </script>

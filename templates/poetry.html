@@ -1,0 +1,63 @@
+{% block content %}
+
+<div class="row">
+    <div class="col-sm-6 col-md-4">      
+      <center><h3>Lady Of Elegance</h3></center>
+      <div class="caption" id="poem1"></div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">      
+      <center><h3>Cancel Red Day</h3></center>
+      <div class="caption" id="poem2"></div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">      
+      <center><h3>Soulmates</h3></center>
+      <div class="caption" id="poem3"></div>
+    </div>
+
+<div class="row">
+    <div class="col-sm-6 col-md-4">      
+      <center><h3>Your empty chair</h3></center>
+      <div class="caption" id="poem4"></div>
+    </div>
+</div>
+
+<script>
+// declaration of variables and HTML values.
+  var vidDiv1 = document.getElementById("poem1");
+  var vidDiv2 = document.getElementById("poem2");
+  var vidDiv3 = document.getElementById("poem3");
+  var vidDiv4 = document.getElementById("poem4");
+// ajax call to database, same as beofre.
+  var dbRequest = new XMLHttpRequest();
+      dbRequest.open('GET', 'http://127.0.0.1:5984/_emails/fc78963f-9292-4789-a4bb-4ee849f8309f');
+    dbRequest.onload = function() {          
+          var myData = JSON.parse(dbRequest.responseText);  
+          renderHTML1(myData);
+          renderHTML2(myData);
+          renderHTML3(myData);
+          renderHTML4(myData);
+               
+    };
+      dbRequest.send();
+
+function renderHTML1(myData){
+    var jData =  "<p>" + myData.p1 + "</p>";
+    vidDiv1.insertAdjacentHTML('beforeend', jData);  
+}
+function renderHTML2(myData){
+    var jData =  "<p>" + myData.p2 + "</p>";
+    vidDiv2.insertAdjacentHTML('beforeend', jData);  
+}
+function renderHTML3(myData){
+    var jData =  "<p>" + myData.p3 + "</p>";
+    vidDiv3.insertAdjacentHTML('beforeend', jData);  
+}
+function renderHTML4(myData){
+    var jData =  "<p>" + myData.p4 + "</p>";
+    vidDiv4.insertAdjacentHTML('beforeend', jData);  
+}
+
+</script>
+{% endblock %}

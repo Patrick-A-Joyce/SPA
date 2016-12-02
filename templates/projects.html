@@ -1,0 +1,295 @@
+{% block content %}
+
+<style>
+  .info {
+    display: none;
+  }
+</style>
+<!-- Content goes here -->
+<h2>Masonary Work</h2>
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/static/img/DSC00035.JPG" alt="...">
+      <div class="caption" id="captionM1">
+        <h3>Artificial Stone Cladding</h3>
+       <button id="btn1" type="button" class="btn btn-danger" role="button">MORE</button> 
+        <button id="btn2" type="button" class="btn btn-danger" role="button">LESS</button> 
+        <div id = "info1" class="info"></div>
+           
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/static/img/DSC00022.JPG" alt="...">
+      <div class="caption" id="captionM2">
+        <h3>Slab Paving</h3>
+        <button id="btn3" type="button" class="btn btn-danger" role="button">MORE</button> 
+        <button id="btn4" type="button" class="btn btn-danger" role="button">LESS</button> 
+        <div id = "info2" class="info"></div>    
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/static/img/DSC00066.jpg" alt="...">
+      <div class="caption" id="captionM2">
+        <h3>Brick Paving</h3>
+        <button id="btn5" type="button" class="btn btn-danger" role="button">MORE</button> 
+        <button id="btn6" type="button" class="btn btn-danger" role="button">LESS</button> 
+        <div id = "info3" class="info"></div>   
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Mechanical Work</h2>
+<div class="row">    
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/static/img/Mech.JPG" alt="...">
+      <div class="caption" id="captionMECH1">
+        <h3>Wiring Loom Replacement</h3>
+        <button id="btn7" type="button" class="btn btn-danger" role="button">MORE</button> 
+        <button id="btn8" type="button" class="btn btn-danger" role="button">LESS</button> 
+        <div id = "info4" class="info"></div>   
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/static/img/Mech2.jpeg" alt="...">
+      <div class="caption" id="captionMECH2">
+      <h3>Shocks Replacement</h3>
+        <button id="btn9" type="button" class="btn btn-danger" role="button">MORE</button> 
+        <button id="btn10" type="button" class="btn btn-danger" role="button">LESS</button> 
+        <div id = "info5" class="info"></div>   
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/static/img/Mech3.jpg" alt="...">
+      <div class="caption" id="captionMECH3">
+        <h3>Bushing / Caliper Replacement</h3>
+        <button id="btn11" type="button" class="btn btn-danger" role="button">MORE</button> 
+        <button id="btn12" type="button" class="btn btn-danger" role="button">LESS</button> 
+        <div id = "info6" class="info"></div>   
+      </div>
+    </div>
+  </div>
+</div>
+
+<h2>Computing Work</h2>
+<div class="row">    
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/static/img/Comp2.JPG" alt="...">
+      <div class="caption" id="captionMECH1">
+        <h3>Server Build</h3>
+        <button id="btn13" type="button" class="btn btn-danger" role="button">MORE</button> 
+        <button id="btn14" type="button" class="btn btn-danger" role="button">LESS</button> 
+        <div id = "info7" class="info"></div>   
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/static/img/Com.jpg" alt="...">
+      <div class="caption" id="captionMECH2">
+        <h3>Pc Fix & Restore</h3>
+        <button id="btn15" type="button" class="btn btn-danger" role="button">MORE</button> 
+        <button id="btn16" type="button" class="btn btn-danger" role="button">LESS</button> 
+        <div id = "info8" class="info"></div>   
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/static/img/Comp3.jpg" alt="...">
+      <div class="caption" id="captionMECH3">
+        <h3>Repurpose</h3>
+        <button id="btn17" type="button" class="btn btn-danger" role="button">MORE</button> 
+        <button id="btn18" type="button" class="btn btn-danger" role="button">LESS</button> 
+        <div id = "info9" class="info"></div>   
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+// Variables declaring there html values
+var Btn1 = document.getElementById("btn1");
+var Btn2 = document.getElementById("btn2");
+var Btn3 = document.getElementById("btn3");
+var Btn4 = document.getElementById("btn4");
+var Btn5 = document.getElementById("btn5");
+var Btn6 = document.getElementById("btn6");
+var Btn7 = document.getElementById("btn7");
+var Btn8 = document.getElementById("btn8");
+var Btn9 = document.getElementById("btn9");
+var Btn10 = document.getElementById("btn10");
+var Btn11 = document.getElementById("btn11");
+var Btn12 = document.getElementById("btn12");
+var Btn10 = document.getElementById("btn13");
+var Btn11 = document.getElementById("btn14");
+var Btn12 = document.getElementById("btn15");
+var Btn10 = document.getElementById("btn16");
+var Btn11 = document.getElementById("btn17");
+var Btn12 = document.getElementById("btn18");
+var myDiv1 = document.getElementById("info1");
+var myDiv2 = document.getElementById("info2");
+var myDiv3 = document.getElementById("info3");
+var myDiv4 = document.getElementById("info4");
+var myDiv5 = document.getElementById("info5");
+var myDiv6 = document.getElementById("info6");
+var myDiv7 = document.getElementById("info7");
+var myDiv8 = document.getElementById("info8");
+var myDiv9 = document.getElementById("info9");
+// jquery onClick function to toggle visibility of Div's
+$("#btn1").click(function(){$("#info1").toggle();});
+$("#btn2").click(function(){$("#info1").hide();});
+
+$("#btn3").click(function(){$("#info2").toggle();});
+$("#btn4").click(function(){$("#info2").hide();});
+
+$("#btn5").click(function(){$("#info3").toggle();});
+$("#btn6").click(function(){$("#info3").hide();});
+
+$("#btn7").click(function(){$("#info4").toggle();});
+$("#btn8").click(function(){$("#info4").hide();});
+
+$("#btn9").click(function(){$("#info5").toggle();});
+$("#btn10").click(function(){$("#info5").hide();});
+
+$("#btn11").click(function(){$("#info6").toggle();});
+$("#btn12").click(function(){$("#info6").hide();});
+
+$("#btn13").click(function(){$("#info7").toggle();});
+$("#btn14").click(function(){$("#info7").hide();});
+
+$("#btn15").click(function(){$("#info8").toggle();});
+$("#btn16").click(function(){$("#info8").hide();});
+
+$("#btn17").click(function(){$("#info9").toggle();});
+$("#btn18").click(function(){$("#info9").hide();});
+// Ajax request to database using Get and parsing as jason.
+// then calling the function to render it in HTML
+  var dbRequest = new XMLHttpRequest();
+      dbRequest.open('GET', 'http://127.0.0.1:5984/_emails/9f8423e4-22fc-4b41-8677-56ef9ad5591c');
+    dbRequest.onload = function() {          
+          var myData = JSON.parse(dbRequest.responseText);  
+          renderHTML1(myData);
+          renderHTML2(myData);
+          renderHTML3(myData);
+          renderHTML4(myData);
+          renderHTML5(myData);
+          renderHTML6(myData);
+          renderHTML7(myData);
+          renderHTML8(myData);
+          renderHTML9(myData);          
+    };
+      dbRequest.send();
+
+// Function to render jason object as HTML
+// uses a key "message1 to return a single element of the document object"
+function renderHTML1(myData){
+    var jData = "<br>" + myData.message1;
+    myDiv1.insertAdjacentHTML('beforeend', jData);  
+}
+
+function renderHTML2(myData){
+    var jData = "<p><br>" + myData.message2 + "<p>";
+    myDiv2.insertAdjacentHTML('beforeend', jData);      
+}
+
+function renderHTML3(myData){
+    var jData = "<p><br>" + myData.message3 + "<p>";
+    myDiv3.insertAdjacentHTML('beforeend', jData);      
+}
+
+function renderHTML4(myData){
+    var jData = "<p><br>" + myData.message4 + "<p>";
+    myDiv4.insertAdjacentHTML('beforeend', jData);      
+}
+
+function renderHTML5(myData){
+    var jData = "<p><br>" + myData.message5 + "<p>";
+    myDiv5.insertAdjacentHTML('beforeend', jData);      
+}
+function renderHTML6(myData){
+    var jData = "<p><br>" + myData.message6 + "<p>";
+    myDiv6.insertAdjacentHTML('beforeend', jData);      
+}
+function renderHTML7(myData){
+    var jData = "<p><br>" + myData.message7 + "<p>";
+    myDiv7.insertAdjacentHTML('beforeend', jData);      
+}
+function renderHTML8(myData){
+    var jData = "<p><br>" + myData.message8 + "<p>";
+    myDiv8.insertAdjacentHTML('beforeend', jData);      
+}
+function renderHTML9(myData){
+    var jData = "<p><br>" + myData.message9 + "<p>";
+    myDiv9.insertAdjacentHTML('beforeend', jData);      
+}
+
+
+
+
+</script>
+<!--
+var Btn = document.getElementById("btn");
+var BtnM2 = document.getElementById("btnM2");
+var myDiv = document.getElementById("info");
+var myDiv2 = document.getElementById("info2");
+
+
+Btn.addEventListener("click", function() {
+
+  var dbRequest = new XMLHttpRequest();
+      dbRequest.open('GET', 'http://127.0.0.1:5984/_emails/9f8423e4-22fc-4b41-8677-56ef9ad5591c');
+
+    dbRequest.onload = function() {
+          
+          var myData = JSON.parse(dbRequest.responseText);
+          renderHTML(myData);
+          $( "#btn" ).click(function() {
+      $( "#info" ).empty();           
+    });
+    };
+
+      dbRequest.send();
+});
+
+
+function renderHTML(myData){
+
+    var jData = "<p><br>" + myData.message + "<p>";
+    myDiv.insertAdjacentHTML('beforeend', jData);
+      $( "#btn2" ).click(function() {
+      $( "#info" ).empty();           
+    });
+}
+
+function renderHTML2(myData){
+
+    var jData = "<p><br>" + myData.message2 + "<p>";
+    myDiv2.insertAdjacentHTML('beforeend', jData);
+      $( "#btn2" ).click(function() {
+      $( "#info" ).empty();           
+    });
+}
+ -->
+
+
+{% endblock %}
